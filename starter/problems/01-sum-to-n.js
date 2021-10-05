@@ -5,14 +5,32 @@ number below 0.
 
 Examples:
 
-sumToN(5) // returns 15
-sumToN(1)  // returns 1
-sumToN(9)  // returns 45
-sumToN(-8)  // returns null
 ***********************************************************************/
 
-// your code here
+// let sumToN = num => {
+  //   if (num < 0) return null;
+  //   else if {
+    //     sum = num + (num + 1)
+    //     num === 0;
+    // }
+    // return sumToN();
+    // }
 
+    function sumToN(num) {
+      if (num < 0) return null;
+      else if (num > 0) {
+        debugger;
+        return num + sumToN(num - 1);
+      }
+      else {
+        return num;
+      }
+    }
+
+    console.log(sumToN(5)) // returns 15
+    console.log(sumToN(1))  // returns 1
+    console.log(sumToN(9))  // returns 45
+    console.log(sumToN(-8))  // returns null
 /**************DO NOT MODIFY ANYTHING UNDER THIS LINE*****************/
 try {
   module.exports = sumToN;
