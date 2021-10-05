@@ -5,15 +5,22 @@ the start, return an empty array.
 
 Examples:
 
-range(1, 5); // [1, 2, 3, 4]
-range(3, 4); // [3]
-range(7, 6); // []
+
 ***********************************************************************/
+let range = (start, end) => {
+  let arr = [];
 
+  if (end < start) return arr;
+  
+  if (start < end) arr.push(start); // base case
 
-// your code here
+  return arr.concat(range(start + 1, end)) // recursive step
 
+}
 
+console.log(range(1, 5)); // [1, 2, 3, 4]
+console.log(range(3, 4)); // [3]
+console.log(range(7, 6)); // []
 /**************DO NOT MODIFY ANYTHING UNDER THIS LINE*****************/
 try {
   module.exports = range;
