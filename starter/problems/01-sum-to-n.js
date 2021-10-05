@@ -17,10 +17,10 @@ Examples:
     // }
 
     function sumToN(num) {
-      if (num < 0) return null;
-      else if (num > 0) {
+      if (num < 0) return null; // base case
+      else if (num > 0) { // recursive case
         debugger;
-        return num + sumToN(num - 1);
+        return num + sumToN(num - 1); // recursive step
       }
       else {
         return num;
