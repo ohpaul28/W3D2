@@ -13,7 +13,7 @@ iceCreamShop([], 'honey lavender'); // false
 ***********************************************************************/
 
 
-// your code here
+const iceCreamShop = (flavors, favorite)
 
 
 /**************DO NOT MODIFY ANYTHING UNDER THIS LINE*****************/
