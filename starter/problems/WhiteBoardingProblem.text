@@ -1,4 +1,11 @@
 
-// return a new function that will close over the outer function. 
-// The parameter of the inner function is going to be divided by the parameter => 
+// return a new function that will close over the outer function.
+// The parameter of the inner function is going to be divided by the parameter =>
 // => of the outer function.
+
+
+let dynamicDivider = divisor => {
+    return () = num => {
+        return num / divisor;
+    }
+}
