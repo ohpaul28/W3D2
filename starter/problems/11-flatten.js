@@ -24,19 +24,27 @@ Examples:
         // take elements out of nested arrays to
         // display them into the main-level array.
 
-let flatten = array => {
-  
-if (array === []) return [];
+let flatten = (array, count = 0) => {
 
-Array.isArray()
+  if (array === []) return [];
 
-/*figure out a way to identify how many layers of arrays exist*/
-  return flatten(array.flat());
+debugger;
+  /*figure out a way to identify how many layers of arrays exist*/
+  for (let i = 0; i < array.length; i++) {
+    let ele = array[i];
+    debugger;
+    if (Array.isArray(ele)) {
+      count++;
+      debugger;
+      flatten(ele);
+    }
+  }
+  return array.flat(count);
 }
 
 
-console.log(flatten([])); // []
-console.log(flatten([1, 2])); // [1, 2]
+// console.log(flatten([])); // []
+// console.log(flatten([1, 2])); // [1, 2]
 console.log(flatten([1, [2, [3]]])); // [1, 2, 3]
 /**************DO NOT MODIFY ANYTHING UNDER THIS LINE*****************/
 try {
