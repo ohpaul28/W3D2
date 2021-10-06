@@ -20,7 +20,13 @@ if (num === 1) return 1; // base case
 
   return n * factorial(n - 1);
 }
- 
+/*Top of stack 
+factorial(1) => 1 * 1  = pop 1
+factorial(2) => 2 * factorial(1) => 2 * 1 = pop 2
+factorial(3) => 3 * factorial(2) => 3 * 2 = poop/ return 6 
+Bottom of stack 
+*/ 
+
 /**************DO NOT MODIFY ANYTHING UNDER THIS LINE*****************/
 try {
   module.exports = factorial;
