@@ -5,25 +5,39 @@ contents on one level.
 
 Examples:
 
-flatten([]); // []
-flatten([1, 2]); // [1, 2]
-flatten([1, [2, [3]]]); // [1, 2, 3]
 ***********************************************************************/
 //Barry's solution
 // const flatten = arr => {
 
-//   for (i = 0; i < arr.length; i++) {
-//     let element = arr[i];
+  //   for (i = 0; i < arr.length; i++) {
+    //     let element = arr[i];
 
-//     if (Arr.isArray(element)) {
-//       newArr.push(...flatten(element));
-//     }else {
-//       newArr.push(element);
-//     }
-//   }
-//   return newArr;
-// };
+    //     if (Arr.isArray(element)) {
+      //       newArr.push(...flatten(element));
+      //     }else {
+        //       newArr.push(element);
+        //     }
+        //   }
+        //   return newArr;
+        // };
+
+        // take elements out of nested arrays to
+        // display them into the main-level array.
+
+let flatten = array => {
   
+if (array === []) return [];
+
+Array.isArray()
+
+/*figure out a way to identify how many layers of arrays exist*/
+  return flatten(array.flat());
+}
+
+
+console.log(flatten([])); // []
+console.log(flatten([1, 2])); // [1, 2]
+console.log(flatten([1, [2, [3]]])); // [1, 2, 3]
 /**************DO NOT MODIFY ANYTHING UNDER THIS LINE*****************/
 try {
   module.exports = flatten;
