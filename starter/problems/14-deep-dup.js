@@ -14,17 +14,12 @@ since we used 'slice' in the example above that 'slice' creates a shallow copy, 
 correct. For this problem we duplicate our original array so that our function returns a new
 array with different memory adresses.
 
-Write a function, deepDup(arr), that deeply duplicates a given array. Your duplicated array, 
+Write a function, deepDup(arr), that deeply duplicates a given array. Your duplicated array,
 when compared to various indexes of the original array, should evaluate to false like below.
 
 
 Examples:
 
-let arr = [[1], [2, [3]]];
-duped = deepDup(arr); // [[1], [2, [3]]]
-arr[0] === duped[0] // false
-arr[1] === duped[1] // false
-arr[1][1] === duped[1][1] // false
 
 Note:
 if you compare a 1 dimensional array of numbers like below,
@@ -37,18 +32,23 @@ console.log(x[0] === y[0]) // true
 ***********************************************************************/
 //Barry's Solution
 // const deepDup = arr => {
-//   let dupArr = arr.slice();
+  //   let dupArr = arr.slice();
 
-//   for (let i = 0; i < arr.length; i++) {
-//     if (Array.isArray(arr[i])) {
-//       dupArr[i] = deepDup(arr[i]);
-//     }
-//   }
-// return dupArr;
-// };
+  //   for (let i = 0; i < arr.length; i++) {
+    //     if (Array.isArray(arr[i])) {
+      //       dupArr[i] = deepDup(arr[i]);
+      //     }
+      //   }
+      // return dupArr;
+      // };
+      // const deepDup = arr => arr.map(el => Array.isArray(el) ? deepDup(el) : el);
 
 
-
+      let arr = [[1], [2, [3]]];
+      duped = deepDup(arr); // [[1], [2, [3]]]
+      arr[0] === duped[0] // false
+      arr[1] === duped[1] // false
+      arr[1][1] === duped[1][1] // false
 /**************DO NOT MODIFY ANYTHING UNDER THIS LINE*****************/
 try {
   module.exports = deepDup;
