@@ -32,7 +32,13 @@ let reverse = (string, newArr = []) => {
 
 // }
 
-
+/* '' on top
+  h + '' = h
+  o + 'h' = 'oh'
+  u + 'oh' = 'uoh'
+  s + 'uoh' = 'suoh'
+  e + 'suoh' = 'esuoh'
+  */
 
 console.log(reverse("house")); // "esuoh"
 console.log(reverse("dog")); // "god"
