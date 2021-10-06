@@ -18,7 +18,7 @@ factorial(5); // 120
 let factorial = num => {
 if (num === 1) return 1; // base case
 
-  return n * factorial(n - 1);
+return n * factorial(n - 1);
 }
 /*Top of stack 
 factorial(1) => 1 * 1  = pop 1

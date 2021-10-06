@@ -9,12 +9,6 @@ let fibonacci = n => {
   return fibonacci(n - 1) + fibonacci(n - 2) // Recursive step
 }
 
-
-
-
-
-
-
 Write a recursive function called `fibonacci` that takes an integer, `n`,
 and returns the `n`th number in the Fibonacci sequence.
 
