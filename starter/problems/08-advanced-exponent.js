@@ -18,7 +18,18 @@ Remember that you don't need to do anything special to square a number, just
 calculate the value and multiply it by itself. So don't cheat and use
 exponentiation in your solution.
 
-Examples:
+For each of the examples above, figure out how many times your code should
+be recursively calling `advancedExponent`. Find a way to visually see how many
+times `advancedExponent` is being recursively called.
+***********************************************************************/
+
+
+function advancedExponent(b, n) {
+    if (n === 0) return 1;
+
+    if ()
+  
+}
 
 advancedExponent(2, 0); // 1
 advancedExponent(2, 1); // 2
@@ -33,18 +44,6 @@ advancedExponent(2, 9); // 512
 advancedExponent(2, 10); // 1024
 advancedExponent(2, 11); // 2048
 advancedExponent(2, 12); // 4096
-
-For each of the examples above, figure out how many times your code should
-be recursively calling `advancedExponent`. Find a way to visually see how many
-times `advancedExponent` is being recursively called.
-***********************************************************************/
-
-
-function advancedExponent(b, n) {
-  // your code here
-}
-
-
 /**************DO NOT MODIFY ANYTHING UNDER THIS LINE*****************/
 try {
   module.exports = advancedExponent;

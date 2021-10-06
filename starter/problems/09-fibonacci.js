@@ -1,4 +1,20 @@
 /***********************************************************************
+let fibonacci = n => {
+  if (n === 0) return 0; // Base case
+
+  if (n === 1) return 1;
+  if (n === 2) return 1; 
+
+  
+  return fibonacci(n - 1) + fibonacci(n - 2) // Recursive step
+}
+
+
+
+
+
+
+
 Write a recursive function called `fibonacci` that takes an integer, `n`,
 and returns the `n`th number in the Fibonacci sequence.
 
@@ -10,17 +26,15 @@ previous numbers in the sequence together to form the next one:
 We count Fibonacci numbers beginning with the first 1. Take a look at the
 examples below if you're unsure where to start!
 
-Examples:
-
-fibonacci(1); // 1
-fibonacci(2); // 1
-fibonacci(3); // 2
-fibonacci(4); // 3
-fibonacci(10); // 55
 ***********************************************************************/
 
-// your code here
-  
+
+
+console.log(fibonacci(1)); // 1
+console.log(fibonacci(2)); // 1
+console.log(fibonacci(3)); // 2
+console.log(fibonacci(4)); // 3
+console.log(fibonacci(10)); // 55 
 /**************DO NOT MODIFY ANYTHING UNDER THIS LINE*****************/
 try {
   module.exports = fibonacci;

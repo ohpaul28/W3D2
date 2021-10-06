@@ -27,6 +27,12 @@ Examples:
       }
     }
 
+// 1 => 1
+// 2 => 2 + sumToN(1) => 2 + 1 => 3
+// 3 => 3 + sumToN(2) => 3 + 3 => 6
+// 4 => 4 + sumToN(3) => 4 + 6 => 10
+// 5 => 5 + sumTon(4) => 5 + 10 => 15
+
     console.log(sumToN(5)) // returns 15
     console.log(sumToN(1))  // returns 1
     console.log(sumToN(9))  // returns 45
