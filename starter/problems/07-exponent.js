@@ -25,6 +25,19 @@ function exponent(b, n) {
   if (n < 0) return (1 / exponent(b, -n)); // recursive step
 
 }
+/*
+exponent(2,0) => 1
+1/2 * exponent(2, 0) => 1/2 * 1 = 1/2
+1/2 * exponent(2, -1) => 1/2 * 1/2 = 1/4
+exponent(2, -2) => 1/4
+*/
+
+/*
+exponent(3, 0) => 1
+3 * exponent(3, 0) => 3 * 1 = 3
+3 * exponent(3,1) => 3 * 3 = 9
+exponent(3, 2) => 9
+*/
 
 console.log(exponent(3, 2)); // 9
 console.log(exponent(2, -2)); // 1/4 (or 0.25)
