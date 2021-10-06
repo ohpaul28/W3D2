@@ -15,11 +15,7 @@ Examples:
 let factorial = num => {
   if (num === 1) return 1; // base case
 
-<<<<<<< HEAD
-return n * factorial(n - 1);
-=======
   return num * factorial(num - 1);
->>>>>>> 0892385e424bf6a29efbed49a77163ba92b55241
 }
 /*Top of stack
 factorial(1) => 1 * 1  = pop 1
