@@ -20,16 +20,16 @@ sort([4,1,6,3,1,7]); // [1, 1, 3, 4, 6, 7]
 sort([0, 1, -3]); // [-3, 0, 1]
 sort([]); // []
 ***********************************************************************/
+// Barry's solution
+// function sort(nums, sorted = []) {
+//   if (nums.length === 0) return sorted;
 
-function sort(nums, sorted = []) {
-  if (nums.length === 0) return sorted;
+//   let index = nums.indexOf(Math.min(...nums));
+//   let num = nums.splice(index, 1)[0];
+//   sorted.push(num);
 
-  let index = nums.indexOf(Math.min(...nums));
-  let num = nums.splice(index, 1)[0];
-  sorted.push(num);
-
-  return sort(nums, sorted)
-}
+//   return sort(nums, sorted)
+// }
 
 // sort([4, 1, 6, 3, 1, 7]); // [1, 1, 3, 4, 6, 7]
 
