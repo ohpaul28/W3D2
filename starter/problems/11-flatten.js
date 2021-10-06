@@ -9,8 +9,20 @@ flatten([]); // []
 flatten([1, 2]); // [1, 2]
 flatten([1, [2, [3]]]); // [1, 2, 3]
 ***********************************************************************/
+//Barry's solution
+// const flatten = arr => {
 
-// your code here
+//   for (i = 0; i < arr.length; i++) {
+//     let element = arr[i];
+
+//     if (Arr.isArray(element)) {
+//       newArr.push(...flatten(element));
+//     }else {
+//       newArr.push(element);
+//     }
+//   }
+//   return newArr;
+// };
   
 /**************DO NOT MODIFY ANYTHING UNDER THIS LINE*****************/
 try {

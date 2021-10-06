@@ -35,8 +35,19 @@ console.log(x[0] === y[0]) // true
 
 
 ***********************************************************************/
+//Barry's Solution
+// const deepDup = arr => {
+//   let dupArr = arr.slice();
 
-// your code here
+//   for (let i = 0; i < arr.length; i++) {
+//     if (Array.isArray(arr[i])) {
+//       dupArr[i] = deepDup(arr[i]);
+//     }
+//   }
+// return dupArr;
+// };
+
+
 
 /**************DO NOT MODIFY ANYTHING UNDER THIS LINE*****************/
 try {
